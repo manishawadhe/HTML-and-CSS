@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calculator</title>
+    <style>
+        .container{
+            width:400px;
+            height: 500px;
+            margin: auto;
+            color: aliceblue;
+        }
+        #input{
+            width:100px
+        }
+        .digit{
+            background-color: azure;
+            
+            
+        }
+        .symbol{
+            background-color:green;
+        }
+        #clear{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="forms">
+            <input id="input" type="text" name="display"> <br></br>
+            <input class="digit" type="button" value="1" onclick="forms.display.value += '1' ">
+            <input class="digit" type="button" value="2" onclick="forms.display.value += '2' ">
+            <input class="digit" type="button" value="3" onclick="forms.display.value += '3' ">
+            <input class="symbol" type="button" value="+" onclick="forms.display.value += '+' ">
+            <br></br>
+            
+            <input class="digit" type="button" value="4" onclick="forms.display.value += '4' ">
+            <input class="digit" type="button" value="5" onclick="forms.display.value += '5' ">
+            <input class="digit" type="button" value="6" onclick="forms.display.value += '6' ">
+            <input class="symbol" type="button" value="-" onclick="forms.display.value += '-' ">
+            <br></br>
+
+            <input class="digit" type="button" value="7" onclick="forms.display.value += '7' ">
+            <input class="digit" type="button" value="8" onclick="forms.display.value += '8' ">
+            <input class="digit" type="button" value="9" onclick="forms.display.value += '9' ">
+            <input class="symbol" type="button" value="*" onclick="forms.display.value += '*' ">
+            <br></br>
+
+            <input id="clear" type="button" value="c" onclick="forms.display.value = '' ">
+            <input class="digit" type="button" value="0" onclick="forms.display.value += '0' ">
+            <input class="symbol" type="button" value="=" onclick="forms.display.value = eval(forms.display.value) ">
+            <input class="symbol" type="button" value="/" onclick="forms.display.value = '/' ">
+        </form>
+    </div>
+    
+    
+</body>
+</html>
